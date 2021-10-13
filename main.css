@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+
+
+.body {
+    background-color: #f2f2f2;
+    font-family: 'Montserrat', sans-serif;
+    color: #6d6c6c;
+    max-width: 950px;
+    margin: auto;
+    font-size: 20px;
+}
+
+.voodoo {
+    /* background-image för att Voodoo-texten ska ligga över */
+    background-image:url(./bilder/header.png.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* 120% för att bilden var kapad/croppad */
+    background-size: 120% auto;
+    height: 39rem;
+    text-align: center;
+    font-size: 26px;
+    color:black;
+}
+
+.rubrik {
+    font-size: 50px;
+    width: 35rem;
+    /* margin-top: 0; för att få texten så nära bilden som möjligt */
+    margin-top: 0px;
+    margin: auto;
+    text-align: right;
+    color: #333;
+    padding-bottom: 2rem;
+}
+
+.underrubrik {
+    font-size: 23px;
+    width: 45rem;
+    margin: auto;
+    text-align: right;
+    color: #6d6c6c;
+}
+
+.h3 {
+    color: #333;
+}
+
+.block1 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    /* endast padding-left för att det är mindre padding från text till kant än bild till kant */
+    padding-left: 5rem;
+}
+
+.block2 {
+    display: flex;
+    justify-content: center;
+}
+
+.block3 {
+    display: flex;
+    justify-content: center;
+    padding-right: 5rem;
+}
+
+.block4 {
+    text-align: left;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.block5 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    color: white;
+    background-color: #333;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.ruta1 {
+    width: 50%;
+    /* padding-top för att texten ska starta där bilden "startar" */
+    padding-top: 5rem;
+}
+
+.ruta2 {
+    width: 50%;
+}
+
+.ruta3 {
+    width: 50%
+}
+
+.ruta4 {
+    width: 50%;
+    text-align: right;
+    padding-top: 4rem;
+}
+
+.ruta5 {
+    padding-right: 7rem;
+    padding-left: 7rem;
+    /* ändra position för att texten ska hamna centrerat i bakgrundsbilden */
+    position: relative; top: 140px;
+ 
+}
+
+.ruta6 {
+    background-color: #333;
+    color: white;
+    font-size: 22px;
+    margin: auto;
+}
+
+.ruta7 {
+    width: 45%;
+}
+
+.ruta8 {
+    width: 45%;
+    text-align: right;
+    padding-top: 3rem;
+}
+
+.tip {
+    background-image: url(./bilder/Q1_newsletter-02.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 30rem;
+    text-align: center;
+    align-items: center;
+}
+
+.rubrik2 {
+    font-size: 50px;
+    color: #333;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    position: relative; top: 140px;
+}
+
+/* for ipad */
+/* ändringar som gör sidan användarvänlig för ipad */
+@media only screen 
+  and (max-width: 900px) {
+
+    .body {
+        /* mindre font för mindre skärm */
+        font-size: 17px;
+    }
+
+    .voodoo {
+        height: 35rem;
+        font-size: 20px;
+    }
+
+    .rubrik {
+        font-size: 37px;
+        width: 28rem;
+    }
+
+    .rubrik2 {
+        font-size: 37px;
+        position: relative; top: 150px;
+    }
+
+    .underrubrik {
+        font-size: 20px;
+        width: 35rem;
+    }
+
+    .ruta5 {
+        position: relative; top: 150px;
+    }
+   
+    .ruta6 {
+        font-size: 20px;
+        padding-left: 8rem;
+    }
+
+    .tip {
+        height: 25rem;
+    }
+
+
+
+/* for iphone */
+/* ändringar som gör sidan användarvänlig för iphone */
+@media only screen 
+  and (max-width: 700px) { 
+
+    .body {
+        font-size: 10px;
+    }
+
+    .voodoo {
+        height: 27rem;
+        font-size: 16px;
+    }
+
+    .rubrik {
+        font-size: 20px;
+        width: 20rem;
+    }
+
+    .rubrik2 {
+        font-size: 20px;
+        position: relative; top: 100px;
+    }
+
+    .underrubrik {
+        font-size: 13px;
+        width: 25rem;
+    }
+
+    .ruta1 {
+        /* mindre padding för mindre skärm */
+        padding-top: 3rem;
+    }
+
+    .ruta4 {
+        padding-top: 3rem;
+    }
+   
+    .ruta5 {
+        position: relative; top: 100px;
+    }
+
+    .ruta6 {
+        font-size: 12px;
+    }
+
+    .tip {
+        height: 15rem;
+        }
