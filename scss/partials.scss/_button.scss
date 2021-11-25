@@ -1,0 +1,13 @@
+//egen fil för .button för att kunna återanvända animering/design i kommande projekt
+.button {
+    border-color: transparent;
+    border-width: thin;
+    border-radius: 10px;
+    color: $darkgrey;
+    font-size: 1.5rem;
+    opacity: 0.6;
+    transition: 0.3s; 
+    padding: 0.2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  .button:hover {opacity: 1}

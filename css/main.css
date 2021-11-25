@@ -1,0 +1,119 @@
+@charset "UTF-8";
+.body, .summa, .beskrivning, .button {
+  font-family: 'Asap', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Outfit', sans-serif;
+  font-family: 'Work Sans', sans-serif; }
+
+* {
+  text-transform: uppercase; }
+
+.body {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  background-color: #f3f0f0; }
+
+.button {
+  border-color: transparent;
+  border-width: thin;
+  border-radius: 10px;
+  color: #3b3b3b;
+  font-size: 1.5rem;
+  opacity: 0.6;
+  transition: 0.3s;
+  padding: 0.2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; }
+
+.button:hover {
+  opacity: 1; }
+
+.minibody {
+  background-color: #b7dbf7;
+  margin: 8rem;
+  border-radius: 25px;
+  min-height: 32rem;
+  width: 50rem;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; }
+
+.form {
+  padding: 1rem; }
+
+.total {
+  font-size: 6rem;
+  color: #3b3b3b;
+  padding: 1rem; }
+
+.select, .summa, .beskrivning {
+  font-size: 1.5rem;
+  color: #3b3b3b;
+  border: solid;
+  border-color: transparent;
+  border-width: thin;
+  border-radius: 10px;
+  background-color: #f3f0f0;
+  padding: 0.2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; }
+
+::placeholder {
+  color: #b7dbf7; }
+
+.inkomster-utgifter {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 1rem;
+  background-color: white;
+  min-height: 19rem;
+  border-radius: 25px; }
+
+h1 {
+  font-size: 3rem;
+  color: #3b3b3b; }
+
+.inkomster, .utgifter {
+  width: 50%; }
+
+.list-inkomster {
+  font-size: 2rem;
+  color: #8bc58b; }
+
+.list-utgifter {
+  font-size: 2rem;
+  color: #ff6767; }
+
+/* for ipad */
+/* ändringar som gör sidan användarvänlig för ipad */
+@media only screen and (max-width: 1000px) {
+  .total {
+    font-size: 5rem; }
+  .select, .button {
+    font-size: 1rem; }
+  .summa, .beskrivning {
+    width: 8rem;
+    font-size: 1rem; }
+  h1 {
+    font-size: 2rem; }
+  .inkomster-utgifter {
+    min-height: 22rem; }
+  .list-inkomster, .list-utgifter {
+    font-size: 1.5rem; } }
+
+/* for iphone */
+/* ändringar som gör sidan användarvänlig för iphone */
+@media only screen and (max-width: 700px) {
+  .total {
+    font-size: 4rem; }
+  .minibody {
+    margin-left: 5.5rem;
+    margin-right: 5.5rem; }
+  .button {
+    margin-top: 0.5rem; }
+  .summa, .beskrivning {
+    width: 7rem; }
+  h1 {
+    font-size: 1.4rem; }
+  .list-inkomster, .list-utgifter {
+    font-size: 1rem; } }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUDGET-APP</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body class="body">
+<div class="minibody"> <!--.minibody för att kunna göra en snygg design, eftersom det är en budget-app är den designad som en mindre body-->
+    <div class="total">0</div>
+
+<form class="form"> <!--form för att strukturera-->
+    <select class="select">
+        <option value="+" >+</option>
+        <option value="-" >-</option>
+    </select>
+
+    <input type="number" class="summa" placeholder="ex. 150 kr"> <!--type=number för att man endast ska kunna skriva pris, placeholder för en användarvänlig app-->
+    <input type="text" class="beskrivning" placeholder="ex. lunch">
+
+    <button type="button" class="button">Lägg till</button>
+</form>
+
+<div class="inkomster-utgifter">
+    <div class="inkomster">
+        <h1>Inkomster</h1>
+        <div class="list-inkomster"></div> <!--div där li kommer att skapas via JS-->
+    </div>
+
+    <div class="utgifter">
+        <h1>Utgifter</h1>
+        <div class="list-utgifter"></div>
+    </div> 
+</div>  
+</div>
+
+</body>
+</html>

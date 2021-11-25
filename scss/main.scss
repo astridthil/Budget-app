@@ -1,0 +1,110 @@
+@import "./variable.scss";
+@import "./global.scss";
+@import "./partials.scss/button";
+//importerat filer
+
+.minibody {
+    background-color: $lightblue;
+    margin: 8rem;
+    border-radius: 25px;
+    min-height: 32rem;
+    width: 50rem;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.form {
+    padding: 1rem;
+}
+.total {
+    font-size: 6rem;
+    color: $darkgrey;
+    padding: 1rem;
+}
+//.select, .summa och .beskrivning har samma design, däför lagda tillsammans
+.select, .summa, .beskrivning {
+    font-size: 1.5rem;
+    color: $darkgrey;
+    border: solid;
+    border-color: transparent;
+    border-width: thin;
+    border-radius: 10px;
+    background-color: $lightgrey;
+    padding: 0.2rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+::placeholder{
+    color: $lightblue;
+}
+.inkomster-utgifter {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 1rem;
+    background-color: $white;
+    min-height: 19rem;
+    border-radius: 25px;
+}
+h1 {
+    font-size: 3rem;
+    color: $darkgrey;  
+}
+.inkomster, .utgifter {
+    width: 50%;
+}
+.list-inkomster {
+    font-size: 2rem;
+    color: $green;
+}
+.list-utgifter {
+    font-size: 2rem;
+    color: $red;
+}  
+/* for ipad */
+/* ändringar som gör sidan användarvänlig för ipad */
+@media only screen 
+  and (max-width: 1000px) {
+    .total {
+        font-size: 5rem;
+    }
+//lagda tillsammans
+    .select, .button {
+        font-size: 1rem;
+    }
+    .summa, .beskrivning {
+        width: 8rem;
+        font-size: 1rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .inkomster-utgifter {
+        min-height: 22rem;
+    }
+    //samma design, lägger tillsammans för att skriva färre rader kod
+    .list-inkomster, .list-utgifter {
+        font-size: 1.5rem;
+    }
+}
+/* for iphone */
+/* ändringar som gör sidan användarvänlig för iphone */
+@media only screen 
+  and (max-width: 700px) {
+    .total {
+        font-size: 4rem;
+    }
+    .minibody {
+        margin-left: 5.5rem;
+        margin-right: 5.5rem;
+    }
+    .button {
+        margin-top: 0.5rem;
+    }
+    .summa, .beskrivning {
+        width: 7rem;
+    }
+    h1 {
+        font-size: 1.4rem;
+    }
+    .list-inkomster, .list-utgifter{
+        font-size: 1rem;
+    }
+}

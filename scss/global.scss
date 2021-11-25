@@ -1,0 +1,11 @@
+//gäller globalt på hela appen
+* {
+    text-transform: uppercase;
+}
+.body {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    background-color: $lightgrey;
+}
